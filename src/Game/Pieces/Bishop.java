@@ -111,6 +111,7 @@ public class Bishop extends Piece {
         setMovableTiles(trimmedNewMovable);
     }
 
+    public String getName() {return "Bishop";}
     public Bishop(Color color){
         super(color);
     }

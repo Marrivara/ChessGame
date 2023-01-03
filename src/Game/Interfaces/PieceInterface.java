@@ -11,6 +11,6 @@ public interface PieceInterface {
     void setMovable(Board board, Tile tile);
     Color getColor();
     Tile[] getMovableTiles();
-
+    public String getName();
     void setMovableTiles(Tile[] movableTiles);
 }

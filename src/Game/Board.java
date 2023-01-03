@@ -63,7 +63,7 @@ public class Board implements BoardInterface {
                 toTile.setPiece(pieceToMove);
                 placeTheMovables(this);
                 isWhiteTurn = !isWhiteTurn;
-                System.out.println(pieceToMove + " moved to " + toTile.getPosition().getPosition());
+                System.out.println(pieceToMove.getName() + " moved to " + toTile.getPosition().getPosition());
             }else{throw new UnsupportedMoveException();}
         }else{throw new EmptyTileSelectedException();}
 
@@ -86,7 +86,7 @@ public class Board implements BoardInterface {
             StringBuilder sb = new StringBuilder();
 
             // add the top row of column labels
-            sb.append("  A B C D E F G H\n");
+            sb.append("    A      B      C      D      E      F      G      H\n");
 
             for (int i = 0; i < 8; i++) {
                 // add the row number label
@@ -96,10 +96,10 @@ public class Board implements BoardInterface {
                     Piece piece = board[i][j].getPiece();
                     if (piece == null) {
                         // add an empty space if there is no piece
-                        sb.append("  ");
+                        sb.append("      |");
                     } else {
                         // add the piece's symbol if there is a piece
-                        sb.append(piece.getClass().getName() + " | ");
+                        sb.append(piece.getName() + "|");
                     }
                 }
 

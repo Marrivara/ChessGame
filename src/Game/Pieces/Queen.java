@@ -199,6 +199,7 @@ public class Queen extends Piece {
         setMovableTiles(trimmedNewMovable);
     }
 
+    public String getName() {return "Queen ";}
     public Queen(Color color) {
         super(color);
     }

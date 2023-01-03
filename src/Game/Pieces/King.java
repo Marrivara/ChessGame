@@ -126,7 +126,7 @@ public class King extends Piece{
         }
         setMovableTiles(trimmedNewMovable);
     }
-
+    public String getName() {return "King  ";}
     public King(Color color){
         super(color);
     }

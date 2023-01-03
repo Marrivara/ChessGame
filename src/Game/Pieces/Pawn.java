@@ -2,7 +2,6 @@ package Game.Pieces;
 
 import Game.Board;
 import Game.Piece;
-import Game.Position;
 import Game.Tile;
 
 import java.awt.*;
@@ -61,7 +60,7 @@ public class Pawn  extends Piece {
         }
         return trimmedNewMovable;
     }
-
+    public String getName() {return "Pawn  ";}
     public Pawn(Color color){
         super(color);
     }

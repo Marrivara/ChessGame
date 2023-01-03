@@ -104,6 +104,7 @@ public class Rook extends Piece {
         }
         setMovableTiles(trimmedNewMovable);
     }
+    public String getName() {return "Rook  ";}
 
     public Rook(Color color){
         super(color);

@@ -2,7 +2,6 @@ package Game.Pieces;
 
 import Game.Board;
 import Game.Piece;
-import Game.Position;
 import Game.Tile;
 
 import java.awt.*;
@@ -130,6 +129,7 @@ public class Knight extends Piece {
 
     }
 
+    public String getName() {return "Knight";}
     public Knight(Color color){
         super(color);
     }

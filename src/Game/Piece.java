@@ -3,7 +3,6 @@ package Game;
 import Game.Interfaces.PieceInterface;
 
 import java.awt.*;
-import java.util.Arrays;
 
 public abstract class Piece implements PieceInterface {
     private Tile[] movableTiles;
@@ -27,7 +26,7 @@ public abstract class Piece implements PieceInterface {
     public Tile[] getMovableTiles(){
         return movableTiles;
     }
-
+    public abstract String getName();
     public void setMovableTiles(Tile[] movableTiles){
         this.movableTiles = movableTiles;
     }
