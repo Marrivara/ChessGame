@@ -1,4 +1,4 @@
-package Game.Exceptions;
+package Mechanics.Exceptions;
 
 public class OutOfLimitsException extends Exception{
     public OutOfLimitsException() {

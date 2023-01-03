@@ -1,8 +1,8 @@
-package Game.Interfaces;
+package Mechanics.Interfaces;
 
-import Game.Board;
-import Game.Position;
-import Game.Tile;
+import Mechanics.Board;
+import Mechanics.Position;
+import Mechanics.Tile;
 
 public interface BoardInterface {
     void placeTheMovables(Board board);

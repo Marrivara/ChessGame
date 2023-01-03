@@ -1,4 +1,4 @@
-package Game;
+package Mechanics;
 
 public class Position {
 

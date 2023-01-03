@@ -6,15 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="44fcf5c2-9675-4322-8e28-8c206a6ea3f7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Interfaces/PieceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Interfaces/PieceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Enums/TileColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Enums/TileColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Exceptions/EmptyTileSelectedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Exceptions/EmptyTileSelectedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Exceptions/OutOfLimitsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Exceptions/OutOfLimitsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Exceptions/UnsupportedMoveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Exceptions/UnsupportedMoveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Exceptions/WrongPieceSelectedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Exceptions/WrongPieceSelectedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/GamePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Interfaces/BoardInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Interfaces/BoardInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Interfaces/PieceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Interfaces/PieceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Interfaces/TileInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Interfaces/TileInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/PiecePlacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/PiecePlacer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

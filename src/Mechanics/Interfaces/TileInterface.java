@@ -1,10 +1,10 @@
-package Game.Interfaces;
+package Mechanics.Interfaces;
 
-import Game.Board;
-import Game.Enums.TileColor;
-import Game.Piece;
-import Game.Position;
-import Game.Tile;
+import Mechanics.Board;
+import Mechanics.Enums.TileColor;
+import Mechanics.Piece;
+import Mechanics.Position;
+import Mechanics.Tile;
 
 public interface TileInterface {
     void setMovable(Board board, Tile tile);

@@ -1,4 +1,4 @@
-package Game;
+package Mechanics;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

@@ -1,8 +1,7 @@
-package Game.Interfaces;
+package Mechanics.Interfaces;
 
-import Game.Board;
-import Game.Piece;
-import Game.Tile;
+import Mechanics.Board;
+import Mechanics.Tile;
 
 import java.awt.*;
 

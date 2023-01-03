@@ -1,7 +1,7 @@
-package Game;
+package Mechanics;
 
-import Game.Enums.TileColor;
-import Game.Pieces.*;
+import Mechanics.Enums.TileColor;
+import Mechanics.Pieces.*;
 
 import java.awt.*;
 

@@ -1,7 +1,7 @@
-package Game;
+package Mechanics;
 
-import Game.Enums.TileColor;
-import Game.Interfaces.TileInterface;
+import Mechanics.Enums.TileColor;
+import Mechanics.Interfaces.TileInterface;
 
 public class Tile implements TileInterface {
     private Position position;

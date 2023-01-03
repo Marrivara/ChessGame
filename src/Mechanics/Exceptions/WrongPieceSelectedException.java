@@ -1,4 +1,4 @@
-package Game.Exceptions;
+package Mechanics.Exceptions;
 
 public class WrongPieceSelectedException extends Exception{
     public WrongPieceSelectedException() {

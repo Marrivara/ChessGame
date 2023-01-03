@@ -1,10 +1,10 @@
-package Game;
+package Mechanics;
 
-import Game.Exceptions.EmptyTileSelectedException;
-import Game.Exceptions.OutOfLimitsException;
-import Game.Exceptions.UnsupportedMoveException;
-import Game.Exceptions.WrongPieceSelectedException;
-import Game.Interfaces.BoardInterface;
+import Mechanics.Exceptions.EmptyTileSelectedException;
+import Mechanics.Exceptions.OutOfLimitsException;
+import Mechanics.Exceptions.UnsupportedMoveException;
+import Mechanics.Exceptions.WrongPieceSelectedException;
+import Mechanics.Interfaces.BoardInterface;
 
 import java.awt.*;
 

@@ -1,6 +1,6 @@
-package Game;
+package Mechanics;
 
-import Game.Interfaces.PieceInterface;
+import Mechanics.Interfaces.PieceInterface;
 
 import java.awt.*;
 
