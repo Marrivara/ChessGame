@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44fcf5c2-9675-4322-8e28-8c206a6ea3f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/res/Pieces.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Inputs/KeyboardInputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Inputs/MouseInputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Main/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChessGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Main/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Main/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Interfaces/TileInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Interfaces/TileInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/PiecePlacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/PiecePlacer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mechanics/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mechanics/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +59,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/berka/Downloads/First/Chess/ChessGame&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/berka/Downloads/First/Chess/ChessGame/res&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\berka\Downloads\First\Chess\ChessGame\res" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MainClass">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -55,11 +79,11 @@
       </method>
     </configuration>
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Game.MainClass" />
+      <option name="MAIN_CLASS_NAME" value="Game.Main.MainClass" />
       <module name="ChessGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.*" />
+          <option name="PATTERN" value="Game.Main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

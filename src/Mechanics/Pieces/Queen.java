@@ -8,6 +8,12 @@ import java.awt.*;
 
 public class Queen extends Piece {
 
+    public Queen(Color color) {
+        super(color);
+        int colorVar = color== Color.WHITE ? 0: 1;
+        setPieceImage(super.importIMG().getSubimage(3*132,colorVar*132,132,132));
+    }
+
     @Override
     public void setMovable(Board board, Tile tile) {
         int count = 0;
@@ -198,10 +204,6 @@ public class Queen extends Piece {
         }
         setMovableTiles(trimmedNewMovable);
     }
-
     public String getName() {return "Queen ";}
-    public Queen(Color color) {
-        super(color);
-    }
 
 }

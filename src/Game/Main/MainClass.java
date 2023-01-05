@@ -1,4 +1,4 @@
-package Game;
+package Game.Main;
 
 public class MainClass {
     public static void main(String[] args){

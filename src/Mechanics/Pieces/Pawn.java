@@ -8,6 +8,12 @@ import java.awt.*;
 
 public class Pawn  extends Piece {
 
+    public Pawn(Color color){
+        super(color);
+        int colorVar = color== Color.WHITE ? 0: 1;
+        setPieceImage(super.importIMG().getSubimage(5*132,colorVar*132,132,132));
+    }
+
     @Override
     public void setMovable(Board board, Tile tile) {
         int rank = tile.getPosition().getRank();
@@ -23,7 +29,6 @@ public class Pawn  extends Piece {
         }
         setMovableTiles(newMovable);
     }
-
     private Tile[] setMovableForColor(Color color, Board board, Tile tile, int rank, int file){
         int count = 0;
         Tile[] newMovable = new Tile[3];
@@ -61,7 +66,4 @@ public class Pawn  extends Piece {
         return trimmedNewMovable;
     }
     public String getName() {return "Pawn  ";}
-    public Pawn(Color color){
-        super(color);
-    }
 }

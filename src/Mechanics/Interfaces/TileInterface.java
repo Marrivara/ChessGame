@@ -6,6 +6,8 @@ import Mechanics.Piece;
 import Mechanics.Position;
 import Mechanics.Tile;
 
+import java.awt.*;
+
 public interface TileInterface {
     void setMovable(Board board, Tile tile);
     Position getPosition();
@@ -16,9 +18,9 @@ public interface TileInterface {
 
     void setPiece(Piece piece);
 
-    TileColor getColor();
+    Color getColor();
 
-    void setColor(TileColor color);
+    void setColor(Color color);
     Piece takeThePiece();
 
 }

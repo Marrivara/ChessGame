@@ -5,9 +5,15 @@ import Mechanics.Piece;
 import Mechanics.Tile;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Rook extends Piece {
 
+    public Rook(Color color){
+        super(color);
+        int colorVar = color== Color.WHITE ? 0: 1;
+        setPieceImage(super.importIMG().getSubimage(0*132,colorVar*132,132,132));
+    }
     @Override
     public void setMovable(Board board, Tile tile) {
         int count = 0;
@@ -104,11 +110,8 @@ public class Rook extends Piece {
         }
         setMovableTiles(trimmedNewMovable);
     }
-    public String getName() {return "Rook  ";}
 
-    public Rook(Color color){
-        super(color);
-    }
+    public String getName() {return "Rook  ";}
 
 
 }

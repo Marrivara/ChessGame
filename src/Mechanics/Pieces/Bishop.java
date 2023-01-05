@@ -8,6 +8,12 @@ import java.awt.*;
 
 public class Bishop extends Piece {
 
+    public Bishop(Color color){
+        super(color);
+        int colorVar = color== Color.WHITE ? 0: 1;
+        setPieceImage(super.importIMG().getSubimage(2*132,colorVar*132,132,132));
+    }
+
     @Override
     public void setMovable(Board board, Tile tile) {
         int count = 0;
@@ -110,10 +116,6 @@ public class Bishop extends Piece {
         }
         setMovableTiles(trimmedNewMovable);
     }
-
     public String getName() {return "Bishop";}
-    public Bishop(Color color){
-        super(color);
-    }
 
 }
