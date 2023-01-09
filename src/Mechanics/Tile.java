@@ -51,7 +51,8 @@ public class Tile implements TileInterface {
     }
 
     public Color getColor() {
-        return tileColor;
+        if(selected){return new Color(170,162,58);}
+        else return tileColor;
     }
 
     public void setColor(Color color) {
