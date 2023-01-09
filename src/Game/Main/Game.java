@@ -1,17 +1,17 @@
 package Game.Main;
-
 public class Game implements Runnable{
 
     GamePanel gamePanel;
     GameWindow gameWindow;
     Thread gameThread;
     private final int MAX_FPS = 120;
+
     public Game(){
         gamePanel = new GamePanel();
         gameWindow = new GameWindow(gamePanel);
         gamePanel.setFocusable(true);
         gamePanel.requestFocus();
-        startGameLoop();
+        //startGameLoop();
     }
 
     private void startGameLoop(){

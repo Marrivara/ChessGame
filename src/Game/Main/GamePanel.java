@@ -56,15 +56,15 @@ public class GamePanel extends JPanel{
 //        }
 //    }
     public void mouseClick(int x, int y){
-        Tile tileClicked = board.getTile((int) Math.ceil(x / 92.0), (int) Math.ceil(y / 92.0));
-        System.out.println("Ekledi" + tileClicked.getPosition().getPosition());
-        System.out.println(selectedCount);
+        Tile tileClicked = board.getTile((int) Math.ceil(y / 92.0), (int) Math.ceil(x / 92.0));
         selected[selectedCount] = ((int) Math.ceil(x / 92.0));
         selectedCount++;
         selected[selectedCount] = ((int) Math.ceil(y / 92.0));
         selectedCount++;
         if(selectedCount == 4){
-            System.out.println("Girdi");
+            if(board.getTile(selected[1], selected[0]).getPiece() != null) {
+                board.getTile(selected[1], selected[0]).getPiece().paintMovableTiles();
+            }
             try{
                 board.movePiece(selected[1],selected[0],selected[3],selected[2]);
 
@@ -73,8 +73,11 @@ public class GamePanel extends JPanel{
             }
             selected = new int[4];
             selectedCount = 0;
-        }
 
+        }
+        else if(tileClicked.getPiece() != null) {
+            tileClicked.getPiece().paintMovableTiles();
+        }
         repaint();
     }
 
@@ -100,8 +103,18 @@ public class GamePanel extends JPanel{
 
     private void drawboard(Graphics g) {
         drawTiles(g);
+        drawMovableTiles(g);
         drawPieces(g);
 
+    }
+
+    private void drawMovableTiles(Graphics g) {
+        for(int i = 0 ; i<8;i++){
+            for(int j =  0; j<8; j++){
+                g.setColor(board.getTileByInt(i,j).getColor());
+                g.fillRect(j*92,i*92,92, 92);
+            }
+        }
     }
 
     private void drawPieces(Graphics g) {

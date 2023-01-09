@@ -42,7 +42,7 @@ public class PiecePlacer {
         board[3][0] = new Tile(new Position("a",4),null, lightBrown);
         board[3][1] = new Tile(new Position("b",4),null, darkBrown);
         board[3][2] = new Tile(new Position("c",4),null, lightBrown);
-        board[3][3] = new Tile(new Position("d",4),null, darkBrown);
+        board[3][3] = new Tile(new Position("d",4),null , darkBrown);
         board[3][4] = new Tile(new Position("e",4),null, lightBrown);
         board[3][5] = new Tile(new Position("f",4),null, darkBrown);
         board[3][6] = new Tile(new Position("g",4),null, lightBrown);

@@ -12,8 +12,10 @@ public class Board implements BoardInterface {
     private Tile[][] board;
     private Piece[] capturedPieces = new Piece[32];;
     private int capturedPiecesCount = 0;
-
     private boolean isWhiteTurn;
+    private int turn = 1;
+    private boolean gameOver = false;
+    private String winner;
 
     public Board(Tile[][] board){
         this.board = board;
@@ -58,17 +60,30 @@ public class Board implements BoardInterface {
                 if (toTile.getPiece() != null) {
                     //Capture the other piece
                     capturedPieces[capturedPiecesCount] = toTile.takeThePiece();
+                    if(capturedPieces[capturedPiecesCount].getName().equals("King  ")){
+                        endGame(pieceToMove.getColor());
+                    }
                     capturedPiecesCount++;
                 }
                 toTile.setPiece(pieceToMove);
+                pieceToMove.increasePieceMoved();
                 placeTheMovables(this);
                 isWhiteTurn = !isWhiteTurn;
-                System.out.println(pieceToMove.getName() + " moved to " + toTile.getPosition().getPosition());
+                turn++;
             }else{throw new UnsupportedMoveException();}
         }else{throw new EmptyTileSelectedException();}
 
     }
 
+    private void endGame(Color color) {
+        gameOver = true;
+        if(color.equals(Color.WHITE)){winner = "WHITE";}
+        else{winner = "BLACK";}
+        System.out.println(winner + " won the game");
+    }
+    public String getWinner(){return winner;}
+    public boolean isGameOver(){return gameOver;}
+    public int getTurn(){return turn;}
     public Tile getTileByInt(int first, int second){
         return board[first][second];
     }

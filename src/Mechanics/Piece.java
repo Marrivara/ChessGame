@@ -15,9 +15,10 @@ public abstract class Piece implements PieceInterface {
     private BufferedImage pieceImage;
 
     private Color color;
+    private int pieceMoved = 0;
 
     public abstract void setMovable(Board board, Tile tile);
-
+    public int getPieceMoved(){return pieceMoved;}
     public Piece(Color color){this.color = color;}
     protected BufferedImage importIMG() {
         InputStream is = getClass().getResourceAsStream("/Pieces.png");
@@ -30,6 +31,7 @@ public abstract class Piece implements PieceInterface {
         return pieceImages;
 
     }
+    public void increasePieceMoved(){pieceMoved++;}
     public BufferedImage getPieceImage(){return pieceImage;}
     public void setPieceImage(BufferedImage image){this.pieceImage = image;}
 
@@ -42,6 +44,11 @@ public abstract class Piece implements PieceInterface {
     }
     public Color getColor(){return color;}
 
+    public void paintMovableTiles(){
+        for(Tile tile: movableTiles){
+            tile.changeSelected();
+        }
+    }
     public Tile[] getMovableTiles(){
         return movableTiles;
     }

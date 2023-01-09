@@ -43,6 +43,12 @@ public class Pawn  extends Piece {
             newMovable[count] = board.getTile(rank + difference, file);
             count++;
         }
+        if(getPieceMoved()==0){
+            if (board.getTile(rank + difference*2, file).getPiece() == null) {
+                newMovable[count] = board.getTile(rank + difference*2, file);
+                count++;
+            }
+        }
 
         //If up and left has a piece with a different color
         if(file < 8) {
